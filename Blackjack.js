@@ -1,5 +1,11 @@
 function print (text, where = "output") {
-  document.getElementById(where).innerHTML += "<p>" + text + "</p>";
+   var out = document.getElementById(where);
+   out.innerHTML += "<p>" + text + "</p>";
+   out.scrollTop = out.scrollHeight;
+}
+
+function stagger (text, where = "output") {
+  setTimeout(print(text, where), 1000);
 }
 
 function read(e, value, id) {

@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StdIO Blackjack</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
-<body>
-  <div id="root"></div>
-  <div id = "output"></div>
-  <div id = "input">
-    <input id ="textbox" type="text" onkeypress="read(event, value, id)"/>
+<body class = "container">
+  <div id="root" class = ""></div>
+  <div id = "output" class = "" style="height: 500px; overflow: auto"></div>
+  <div id = "input" class = "">
+    <input id ="textbox" type="text" onkeypress="read(event, value, id)" style="width: 100%;" />
   </div>
   <script src="Blackjack.js" ></script>
 </body>
